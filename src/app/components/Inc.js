@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from "react-redux"
+import { Increment } from '../actions/actionsCreators';
 
 const Inc = () => {
 
@@ -7,7 +8,7 @@ const Inc = () => {
 
     return (
         <button onClick={() => {
-            dispatch({ type: "INC" })
+            dispatch(Increment())
         }}
             className='btn btn-success me-3'
         >Inc</button>

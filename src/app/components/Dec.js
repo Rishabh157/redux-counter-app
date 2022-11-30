@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from "react-redux"
+import { Decrement } from '../actions/actionsCreators';
 
 const Dec = () => {
 
@@ -8,7 +9,7 @@ const Dec = () => {
     return (
         <button
             onClick={() => {
-                dispatch({ type: "DEC" })
+                dispatch(Decrement())
             }}
             className='btn btn-dark ms-3'
         >
